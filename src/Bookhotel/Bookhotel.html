@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="hotellogin" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Bookhotel.css">
+    <title>Room Requirement Page</title>
+</head>
+
+<body>
+    <div class="firstRow">
+        <button class="logoButton" onclick="JUMP2HP()">
+            <img class="logo" src="..\images\logo.jpg" >
+        </button>
+        <span class="space">
+            <a href="..\index.php">Home Page</a>&nbsp;
+            >>&nbsp;
+            <a href="javascript:location.reload()">Set requirement Page</a>
+        </span>
+        <button id="signinButton" class="signinButton">
+            <img id="userSignin" src="..\images\Signin.jpg">
+        </button>
+    </div>
+
+    <div class="RoomForm">
+        <div class="welcomeSaying">
+            <span>Dear </span>
+            <span id="username" value="0"></span>
+            <span>, welcome !</span>
+        </div>
+        <div id="selectType">How can we serve you ?</div>
+
+        <div class="timeInput">
+            Check in: <input type="text" id="Check_in" class="timeBox" disabled="disabled">
+            <button class="timeButton" onclick="TurnTime('Check_in')">Show time</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Check out: <input type="text" id="Check_out" class="timeBox" disabled="disabled">
+            <button class="timeButton" onclick="TurnTime('Check_out')">Show time</button>
+        </div>
+        <div id="transback"></div>
+        <div id="data">
+            <p>
+                <span id="prevM">Prev</span>
+                <span id="prevY">-</span>
+                <span id="nian">2019</span>
+                <span id="nextY">+</span>
+                <span id="nextM">Next</span>
+            </p>
+            <h5 id="yue">4</h5>
+            <ul id="title">
+                <li>SUN</li>
+                <li>MON</li>
+                <li>TUE</li>
+                <li>WED</li>
+                <li>THU</li>
+                <li>FRI</li>
+                <li>SAT</li>
+            </ul>
+            <ul id="date">
+            </ul>
+        </div>
+
+
+        <br />
+        <div class="displayRoom">
+            <img id="SSRPic" class="RoomPic" src="..\images\small_single_room.jpg"/><br />
+            <button id="SSR" onclick="chooseType('Small Single Room')" class="RoomButton">Small Single Room</button>
+        </div>
+        <div class="displayRoom">
+            <img id="LSRPic" class="RoomPic" src="..\images\large_single_room.jpg"/><br />
+            <button id="LSR" onclick="chooseType('Large Single Room')" class="RoomButton">Large Single Room</button>
+        </div>
+        <div class="displayRoom">
+            <img id="LDRPic" class="RoomPic" src="..\images\large_double_room.jpg"/><br />
+            <button id="LDR" onclick="chooseType('Large Double Room')" class="RoomButton">Large Double Room</button>
+        </div>
+        <div class="displayRoom">
+            <img id="VIPPic" class="RoomPic" src="..\images\vip_room.jpg"/><br />
+            <button id="VIP" onclick="chooseType('VIP Room')" class="RoomButton">VIP Room</button>
+        </div>
+        <br />
+
+        <div class="question">
+            Do you want to select the rooms yourself?
+            <label><input id="selectCheckY" type="radio" name="choice" onchange="how2SelectY()" checked="true">Yes</label>
+            <label><input id="selectCheckN" type="radio" name="choice" onchange="how2SelectN()">No</label>
+            <div id="selectWords">
+                Please select the number of rooms you want: 
+                <select id="numberOfRooms" onblur="checkInput()">
+                    <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                    <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                    <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+        </div>
+        <div>
+        <button id="confirm" class="nextStepButton" onclick="nextStep()">Next Step</button><br />
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="loadPage.js"></script>
+<script type="text/javascript" src="Bookhotel.js"></script>
+<script type="text/javascript" src="calendar.js"></script>
+
+</html>

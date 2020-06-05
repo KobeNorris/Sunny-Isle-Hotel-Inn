@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="hotellogin" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="SelectRoom.css">
+    <title>Select Room Page</title>
+</head>
+
+<body>
+    <div class="firstRow">
+        <button class="logoButton" onclick="JUMP2HP()">
+            <img class="logo" src="..\images\logo.jpg">
+        </button>
+        <span class="space">
+            <a href="..\index.php">Home Page</a>&nbsp;
+            >>&nbsp;
+            <a href="..\Bookhotel\Bookhotel.html">Set requirement Page</a>&nbsp;
+            >>&nbsp;
+            <a href="javascript:location.reload()">Select Room Page</a>
+        </span>
+        <button id="signinButton" class="signinButton" onclick="JUMP2MP()">
+            <img id="userProfile" class="myProfileButton" src="../images/myProfile.jpg" />
+        </button>
+    </div>
+
+    <div class="RoomForm">
+        <div class="askUser">
+            Please select the room you want!
+        </div>
+        <div>
+            <span id="occupiedModel">
+                Occupied
+            </span>
+            <span id="orderedModel">
+                Ordered
+            </span>
+            <span id="emptyModel">
+                Empty
+            </span>
+        </div>
+        <div class="yourOrder">
+            Your order
+            <span id="numberOfRoom">
+            </span>
+        </div>
+
+        <div id="outterMap">
+            <button id="floorSub" onclick="foolrSub()">
+                -
+            </button>
+            <span id="floorTitil">
+                floor
+            </span>
+            <span id="floorNumber">
+                1
+            </span>
+            <button id="floorAdd" onclick="foolrAdd()">
+                +
+            </button>
+            <table id="hotelMap" ; class="hotelMap">
+                <tr>
+                    <td id="R01" class="unabledRoomBlock" onclick="">1</td>
+                    <td id="R02" class="unabledRoomBlock" onclick="">2</td>
+                    <td id="R03" class="unabledRoomBlock" onclick="">3</td>
+                    <td id="R04" class="unabledRoomBlock" onclick="">4</td>
+                    <td id="R05" class="unabledRoomBlock" onclick="">5</td>
+                </tr>
+                <tr>
+                    <td id="R13" ; rowspan="2" class="unabledRoomBlock" onclick="">13</td>
+                    <th id="R14" rowspan="2" ; colspan="3">Stairs and Looby</th>
+                    <td id="R06" class="unabledRoomBlock" onclick="">6</td>
+                </tr>
+                <tr>
+                    <td id="R07" class="unabledRoomBlock" onclick="">7</td>
+                </tr>
+                <tr>
+                    <td id="R12" class="unabledRoomBlock" onclick="">12</td>
+                    <td id="R11" class="unabledRoomBlock" onclick="">11</td>
+                    <td id="R10" class="unabledRoomBlock" onclick="">10</td>
+                    <td id="R09" class="unabledRoomBlock" onclick="">9</td>
+                    <td id="R08" class="unabledRoomBlock" onclick="">8</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="outter_scroll">
+            <div id="orderedList" ; class="inner_scroll">
+
+            </div>
+        </div>
+
+        <div>
+            <button id="back" class="back" onclick="backButton()">Back</button>
+            <button id="Confirm" class="confirm" onclick="confirmButton()">Confirm</button>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="SelectRoom.js"></script>
+
+</html>

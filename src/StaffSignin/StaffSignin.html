@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="hotellogin" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="StaffSignin.css">
+    <title>Staff Signin Page</title>
+</head>
+
+<body>
+    <div class="firstRow">
+        <button class="logoButton" onclick="JUMP2HP()">
+            <img class="logo" src="..\images\logo.jpg">
+        </button>
+        <span class="space">
+        </span>
+        <button class="signinButton" onclick="jump2LI()">
+                <img id="userImage" src="..\images\Signin.jpg">
+        </button>
+    </div>
+
+
+    <div class="registerFrom">
+        <br /><span class="formTitle">Staff Signin</span><br /><br />
+        <span class="warnning" id="warnning"></span><br />
+        <table>
+            <tr>
+                <th>Username</th>
+                <td>&nbsp;</td>
+                <td><input type="text" id="username" /></td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td>&nbsp;</td>
+                <td><input type="password" id="password" /></td>
+            </tr>
+        </table>
+        <button class="submit" onclick="checkSignin()">SUBMIT</button>
+        <br />
+        <br /><br />
+    </div>
+
+
+</body>
+<script type="text/javascript" src="StaffSignin.js"></script>
+
+</html>

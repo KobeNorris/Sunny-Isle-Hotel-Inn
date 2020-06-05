@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="hotellogin" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="RegisterAccount.css">
+    <title>Register Account</title>
+</head>
+
+<body>
+    <div class="firstRow">
+        <button class="logoButton" onclick="jump2HP()">
+            <img class="logo" src="..\images\logo.jpg">
+        </button>
+        <span class="space"> </span>
+        <button class="signinButton" onclick="jump2LI()">
+            <img id="userImage" src="..\images\Signin.jpg">
+        </button>
+    </div>
+
+
+    <div class="registerFrom">
+        <br />
+        <span class="formTitle">Register Form</span><br /><br />
+        <div id="warnning" class="warnning"></div>
+        <table>
+            <tr>
+                <th>Username</th>
+                <td id="check0">&nbsp;</td>
+                <td><input type="text" id="username" onblur="checkUsername(this.value)" /></td>
+            </tr>
+            <tr>
+                <th>Realname</th>
+                <td id="check1">&nbsp;</td>
+                <td><input type="text" id="realname" /></td>
+            </tr>
+            <tr>
+                <th>Passport ID</th>
+                <td id="check2">&nbsp;</td>
+                <td><input type="text" id="passport" /></td>
+            </tr>
+            <tr>
+                <th>Telephone Number</th>
+                <td id="check3">&nbsp;</td>
+                <td><input type="text" id="telephone" oninput="checkTelephone()" onblur="checkTelephone()"/></td>
+            </tr>
+            <tr>
+                <th>Email Address</th>
+                <td id="check4">&nbsp;</td>
+                <td><input type="text" id="email" onblur="checkEmail()"/></td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td id="check5">&nbsp;</td>
+                <td><input type="password" id="password1" oninput="checkPasswordFormat()" onblur="checkPasswordFormat()"/></td>
+            </tr>
+            <tr>
+                <th>Password Comfirm</th>
+                <td id="check6">&nbsp;</td>
+                <td><input type="password" id="password2" oninput="checkPassword()" onblur="checkPassword()"/></td>
+            </tr>
+        </table>
+        <button class="submit" onclick="register()">SUBMIT</button>
+        <br />
+        <a class="signin" href="../SigninPage/SigninPage.html">Already have an account?</a>
+        <br /><br />
+    </div>
+</body>
+<script type="text/javascript" src="RegisterAccount.js"></script>
+
+</html>

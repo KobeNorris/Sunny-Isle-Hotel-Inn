@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="MyProfile.css">
+    <title>My Profile Page</title>
+</head>
+
+<body>
+    <div class="firstRow">
+        <button class="logoButton" onclick="JUMP2HP()">
+            <img class="logo" src="..\images\logo.jpg">
+        </button>
+        <span class="space">
+        </span>
+    </div>
+
+    <div class="RoomForm">
+
+        <div id="UserAllege">Profile</div>
+        <table id="UserInfoTable">
+            <caption id="warnning"></caption>
+            <tr class="infoRoll">
+                <th>Realname</th>
+                <td id="check1" class="checkBox">&nbsp;&nbsp;&nbsp;</td>
+                <td><input id="1" class="inputBox" type="text" value="" disabled="ture"/></td>
+                <td><button id="1B" class="modifyButton" onclick="modify(event,'1')">Modify</button></td>
+            </tr>
+            <tr class="infoRoll">
+                <th>Passport ID</th>
+                <td id="check2" class="checkBox">&nbsp;&nbsp;&nbsp;</td>
+                <td><input id="2" class="inputBox" type="text" value="" disabled="ture" /></td>
+                <td><button id="2B" class="modifyButton" onclick="modify(event,'2')">Modify</button></td>
+            </tr>
+            <tr class="infoRoll">
+                <th>Telephone Number</th>
+                <td id="check3" class="checkBox">&nbsp;&nbsp;&nbsp;</td>
+                <td><input id="3" class="inputBox" type="text" value="" disabled="ture"/></td>
+                <td><button id="3B" class="modifyButton" onclick="modify(event,'3')">Modify</button></td>
+            </tr>
+            <tr class="infoRoll">
+                <th>Email Address</th>
+                <td id="check4" class="checkBox">&nbsp;&nbsp;&nbsp;</td>
+                <td><input id="4" class="inputBox" type="text" value="" disabled="ture"/></td>
+                <td><button id="4B" class="modifyButton" onclick="modify(event,'4')">Modify</button></td>
+            </tr>
+            <tr class="infoRoll">
+                <th>Password</th>
+                <td id="check5" class="checkBox">&nbsp;&nbsp;&nbsp;</td>
+                <td><input id="5" class="inputBox" type="password" value="" disabled="ture"/></td>
+                <td><button id="5B" class="modifyButton" onclick="modifypw(event,'5')">Modify</button></td>
+            </tr>
+            <tr class="infoRoll">
+                <th>Password Confirm</th>
+                <td id="check6" class="checkBox">&nbsp;&nbsp;&nbsp;</td>
+                <td><input id="6" class="inputBox" type="password" value="" disabled="ture"/></td>
+                <td><button id="6B" class="modifyButton" onclick="modifypw(event,'6')">Modify</button></td>
+            </tr>
+        </table>
+
+        <div>
+            <button class="MOButton" onclick="JUMP2MO()">Manage Orders</button>
+        </div>
+
+        <div>
+            <button class="cancelButton" onclick="cancel()">Cancel</button>
+            <button class="logoutButton" onclick="logOut()">Logout</button>
+            <button class="submitButton" onclick="submit()">Submit</button>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="MyProfile.js"></script>
+
+</html>

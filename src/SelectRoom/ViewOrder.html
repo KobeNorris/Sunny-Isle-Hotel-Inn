@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="hotellogin" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="ViewOrder.css">
+    <title>View Order Page</title>
+</head>
+
+<body>
+    <div class="firstRow">
+        <button class="logoButton" onclick="JUMP2HP()">
+            <img class="logo" src="..\images\logo.jpg">
+        </button>
+        <span class="space">
+            <a href="..\index.php">Home Page</a>&nbsp;
+            >>&nbsp;
+            <a href="..\Bookhotel\Bookhotel.html">Set requirement Page</a>&nbsp;
+            >>&nbsp;
+            <a href="..\SelectRoom\SelectRoom.html">Select Room Page</a>&nbsp;
+            >>&nbsp;
+            <a href="javascript:location.reload()">View order Page</a>
+        </span>
+        <button id="signinButton" class="signinButton" onclick="JUMP2MP()">
+            <img id="userProfile" class="myProfileButton" src="../images/myProfile.jpg" />
+        </button>
+    </div>
+
+    <div class="RoomForm">
+        <div class="acceptance">
+            Your order has been accepted, congratulation !
+        </div>
+        <div class="VYR">
+            View Your Regiteration
+        </div>
+        <div id="orderInfo" class="orderInfo">
+
+        </div>
+
+
+        <div class="viewContent">
+            <div class="outter_scroll">
+                <div id="roomList" ; class="inner_scroll">
+
+                </div>
+            </div>
+
+
+            <div id="outterMap">
+                <table id="hotelMap" ; class="hotelMap">
+                    <tr>
+                        <td id="R01" class="roomBlock">1</td>
+                        <td id="R02" class="roomBlock">2</td>
+                        <td id="R03" class="roomBlock">3</td>
+                        <td id="R04" class="roomBlock">4</td>
+                        <td id="R05" class="roomBlock">5</td>
+                    </tr>
+                    <tr>
+                        <td id="R13" ; rowspan="2" class="roomBlock">13</td>
+                        <th id="R14" rowspan="2" ; colspan="3">Stairs and Looby</th>
+                        <td id="R06" class="roomBlock">6</td>
+                    </tr>
+                    <tr>
+                        <td id="R07" class="roomBlock">7</td>
+                    </tr>
+                    <tr>
+                        <td id="R12" class="roomBlock">12</td>
+                        <td id="R11" class="roomBlock">11</td>
+                        <td id="R10" class="roomBlock">10</td>
+                        <td id="R09" class="roomBlock">9</td>
+                        <td id="R08" class="roomBlock">8</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <button id="Rebook" class="Rebook" onclick="reBook()">Book again</button>
+        <button id="Logout" class="Logout" onclick="logOut()">Log out</button>
+    </div>
+
+</body>
+<script type="text/javascript" src="ViewOrder.js"></script>
+
+</html>

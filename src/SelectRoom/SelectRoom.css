@@ -1,0 +1,272 @@
+/*SelectRoom*/
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-image:url('../images/hotelBackground.jpg');
+    background-repeat: no-repeat;
+    background-color: aliceblue;
+    background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+.firstRow{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1260px;
+    position: relative;
+    background-color: rgb(250, 250, 250);
+}
+.logoButton{
+    width: 150px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+.logo{
+    width: 150px;
+    padding-top: 3px;
+    padding-left: 3px;
+    position: relative;
+}
+#userSignin{
+    width: 80%;
+    display: inline-block;
+    position: relative;
+}
+.signinButton{
+    border: none;
+    cursor: pointer;
+    width: 122px;
+    height: 30px;
+    margin-top:10px;
+    vertical-align: top;
+    background-color: rgb(250, 250, 250);
+}
+.myProfileButton{
+    border: none;
+    width: 110px;
+    background-color: rgb(250, 250, 250);
+    vertical-align: 20%;
+    position: relative;
+    right: 12px;
+}
+a:link{
+    color: black;
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: blue;
+    text-decoration: none;
+}
+a:active{
+    color: gray;
+    text-decoration: none;
+}
+.space{
+    color: black;
+    font-size: 13px;
+    padding-left: 2%;
+    width: 950px;
+    vertical-align: 130%;
+    display: inline-block;
+    font-family: Microsoft YaHei, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/*Content---------------------------------------------------------------------------------------------------------------------------*/
+.RoomForm{
+    background-color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 4px solid black;
+    border-radius: 0%;
+    box-shadow: 3px 3px 3px 3px;
+    width: 1000px;
+    height: 440px;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.askUser{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 35px;
+}
+.yourOrder{
+    margin-top: 10px;
+    margin-left: 500px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+.outter_scroll{
+    height: 230px;
+    width: 240px;
+    background: white;
+    overflow-x: hidden; overflow-y: auto;
+    display: inline-block;
+    border: 3px solid black;
+    box-shadow: 2px 2px 2px 2px;
+    vertical-align: -1200%;
+    margin-left: 100px;
+}    
+.inner_scroll{
+    height:100%; 
+    width: 260px;
+    overflow-x: hidden;
+}
+#occupiedModel{
+    color: red;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: Arial, sans-serif;
+    margin-top: 10px
+}
+#orderedModel{
+    color: orange;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: Arial, sans-serif;
+    margin-left: 80px;
+}
+#emptyModel{
+    color: green;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: Arial, sans-serif;
+    margin-left: 80px;
+}
+
+/*Hotel Map----------------------------------------------------------------------------------------------------------------------------*/
+td{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px
+}
+#outterMap{
+    display: inline-block;
+    width: 400px;
+}
+.unabledRoomBlock{
+    background-color:lightgrey;
+    cursor: default;
+}
+.occupiedRoomBlock{
+    background-color:red;
+    cursor: default;
+}
+.orderedRoomBlock{
+    background-color:orange;
+    cursor: pointer;
+}
+.emptyRoomBlock{
+    background-color:green;
+    cursor: pointer;
+}
+
+
+#floorSub{
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin-left: -20px;
+    margin-bottom: 10px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    border: 2px solid lightgray;
+    background-color: lightgray;
+}
+#floorSub:hover{
+    border: 2px solid black;
+}
+#floorAdd{
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 2px solid lightgray;
+    background-color: lightgray;
+}
+#floorAdd:hover{
+    border: 2px solid black;
+}
+#floorNumber{
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin-left: 5px;
+    cursor: default;
+}
+#floorTitil{
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin-left: 40px;
+    cursor: default;
+}
+
+/*Order List------------------------------------------------------------------------------------------------------------------------*/
+.roomButton{
+    background-color: orange;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border: 2px solid orange;
+    border-radius: 20px;
+    width: 200px;
+    height: 30px;
+}
+.roomButton:hover{
+    border: 2px solid black;
+}
+#R14{
+    font-size: 23px;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+#back{
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(18, 81, 163);
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 0px;
+    border-radius: 5px;
+    border-style: none;
+    width: 130px;
+    height: 40px;
+}
+#back:hover {
+    border: 3px solid black;
+}
+#Confirm{
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(18, 81, 163);
+    cursor: pointer;
+    margin-left: 650px;
+    border-radius: 5px;
+    border-style: none;
+    width: 130px;
+    height: 40px;
+}
+#Confirm:hover {
+    border: 3px solid black;
+}

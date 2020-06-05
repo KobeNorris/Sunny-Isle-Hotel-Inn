@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="StaffView.css">
+    <title>Staff View Page</title>
+</head>
+
+<body>
+    <div class="firstRow">
+        <button class="logoButton" onclick="JUMP2HP()">
+            <img class="logo" src="..\images\logo.jpg">
+        </button>
+        <span class="space">
+            <a href="..\index.php">Home Page</a>&nbsp;
+            >>&nbsp;
+            <a href="javascript:location.reload()">Staff Page</a>
+        </span>
+    </div>
+
+    <div class="RoomForm">
+
+        <div id="ClientsOrders">
+            Clients' Orders
+        </div>
+
+        <div class="example">
+            <span class="emptyExample">
+                Booked
+            </span>
+            <span class="occupiedExample">
+                Checked in
+            </span>
+            <span class="overdueExample">
+                Overdue
+            </span>
+        </div>
+
+        <div class="outter_scroll">
+            <div id="orderList" ; class="inner_scroll">
+
+            </div>
+        </div>
+
+        <div id="outterMap">
+            <table id="hotelMap" ; class="hotelMap">
+                <tr>
+                    <td id="R01" class="roomBlock">1</td>
+                    <td id="R02" class="roomBlock">2</td>
+                    <td id="R03" class="roomBlock">3</td>
+                    <td id="R04" class="roomBlock">4</td>
+                    <td id="R05" class="roomBlock">5</td>
+                </tr>
+                <tr>
+                    <td id="R13" ; rowspan="2" class="roomBlock">13</td>
+                    <th id="R14" rowspan="2" ; colspan="3">Stairs and Looby</th>
+                    <td id="R06" class="roomBlock">6</td>
+                </tr>
+                <tr>
+                    <td id="R07" class="roomBlock">7</td>
+                </tr>
+                <tr>
+                    <td id="R12" class="roomBlock">12</td>
+                    <td id="R11" class="roomBlock">11</td>
+                    <td id="R10" class="roomBlock">10</td>
+                    <td id="R09" class="roomBlock">9</td>
+                    <td id="R08" class="roomBlock">8</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <button class="logOutButton" onclick="logOut()">Log out</button>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="StaffView.js"></script>
+
+</html>

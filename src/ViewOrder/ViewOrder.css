@@ -1,0 +1,200 @@
+/*ViewOrder.css*/
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-image:url('../images/hotelBackground.jpg');
+    background-repeat: no-repeat;
+    background-color: aliceblue;
+    background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+.firstRow{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1260px;
+    position: relative;
+    background-color: rgb(250, 250, 250);
+}
+.logoButton{
+    width: 150px;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+.logo{
+    width: 150px;
+    padding-top: 3px;
+    padding-left: 3px;
+    position: relative;
+}
+#userSignin{
+    width: 80%;
+    display: inline-block;
+    position: relative;
+}
+.signinButton{
+    border: none;
+    cursor: pointer;
+    width: 122px;
+    height: 30px;
+    margin-top:10px;
+    vertical-align: top;
+    background-color: rgb(250, 250, 250);
+}
+.myProfileButton{
+    border: none;
+    width: 110px;
+    background-color: rgb(250, 250, 250);
+    vertical-align: 20%;
+    position: relative;
+    right: 12px;
+}
+a:link{
+    color: black;
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: blue;
+    text-decoration: none;
+}
+a:active{
+    color: gray;
+    text-decoration: none;
+}
+.space{
+    color: black;
+    font-size: 13px;
+    padding-left: 2%;
+    width: 950px;
+    vertical-align: 130%;
+    display: inline-block;
+    font-family: Microsoft YaHei, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*Content--------------------------------------------------------------------------------------------------------------------*/
+.RoomForm{
+    background-color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 4px solid black;
+    border-radius: 0%;
+    box-shadow: 3px 3px 3px 3px;
+    width: 1000px;
+    height: 440px;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.outter_scroll{
+    height: 230px;
+    width: 240px; 
+    background: white;
+    overflow-x: hidden; overflow-y: auto;
+    display: inline-block;
+    border: 3px solid black;
+    box-shadow: 2px 2px 2px 2px;
+    margin-left: 40px;
+}    
+.inner_scroll{
+    height:100%; 
+    width: 260px;
+    overflow-x: hidden;
+}
+.roomButton{
+    margin-top: 12px;
+    margin-left: -15px;
+    background-color: cornflowerblue;
+    color: white;
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#roomList>:hover {
+    border: 3px solid darkblue;
+}
+td{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px
+}
+#outterMap{
+    display: inline-block;
+    width: 400px;
+    vertical-align: 25%;
+    margin-left: 100px;
+}
+.roomBlock{
+    background-color: white;
+}
+#R14{
+    font-size: 23px;
+}
+
+/*Innercontent--------------------------------------------------------------------------------------------------------------------------*/
+.acceptance{
+    font-family: Arial, sans-serif;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.VYR{
+    font-family: Arial, sans-serif;
+    margin-top: 25px;
+    font-size: 20px;
+}
+.orderInfo{
+    color: red;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.viewContent{
+    margin-top: 10px;
+}
+#Rebook{
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(18, 81, 163);
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 0px;
+    border-radius: 5px;
+    border-style: none;
+    width: 130px;
+    height: 40px;
+}
+#Rebook:hover {
+    border: 3px solid black;
+}
+#Logout{
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(18, 81, 163);
+    cursor: pointer;
+    margin-left: 650px;
+    border-radius: 5px;
+    border-style: none;
+    width: 130px;
+    height: 40px;
+}
+#Logout:hover {
+    border: 3px solid black;
+}
