@@ -3,8 +3,8 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 $dsn = 'mysql:host=localhost;dbname=scykw1';
-$user = 'scykw1';
-$password = 'Kobewkj990522#';
+$user = 'team35';
+$password = 'team35';
 
 try {
     $sql='select * from orders Order By Username ASC, Roomlevel asc, Roomnumber ASC, Checkin ASC';

@@ -3,8 +3,8 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 $dsn = 'mysql:host=localhost;dbname=scykw1';
-$user = 'scykw1';
-$password = 'Kobewkj990522#';
+$user = 'team35';
+$password = 'team35';
 
 $roomType = $_POST['roomType'];
 $Check_in = $_POST['Checkin'];
@@ -54,8 +54,8 @@ $dbh = NULL;
 
 function checkRoom($selectRoom, $Check_in, $Check_out){
     $n_dsn = 'mysql:host=localhost;dbname=scykw1';
-    $n_user = 'scykw1';
-    $n_password = 'Kobewkj990522#';
+    $n_user = 'team35';
+    $n_password = 'team35';
 
     $n_Roomlevel = $selectRoom['Roomlevel'];
     $n_Roomnumber = $selectRoom['Roomnumber'];
